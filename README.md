@@ -1,2 +1,2 @@
 # gradtemp
-this is a temp repository.
+这只是一个临时文件
