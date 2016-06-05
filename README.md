@@ -27,6 +27,7 @@ FourbarInfo.jpg——四杆机构信息图
 ##包覆分析(bffx文件夹)
 主要matlab文件说明：  
 main.m——主文件，绘制出5种不同R情况下球体和立方体的包覆率，包覆面积，利用率与高度h之间的关系，针对不同的R情况，只需自行改变R内的取值。（“%球体”，“%立方体”分别代表各自情况）  
+main2.m——主文件2，绘制不同半径时的最大包覆率和包覆面积   
 '''''与球体相关部分'''''  
 totalarea.m——计算给定参数情况下总包覆面积及包覆率  
 limittheta2.m——计算极限包覆情况时的角度  
@@ -42,7 +43,7 @@ reclimittheta.m——计算极限包覆情况时的角度
 syms x y r k h;  
 [solx,soly]=solve([x^2+(y+h)^2==r^2, k*(x+E1)==y],x,y);  
 syms k1 h1 r1;  
-tempk=solve((k1*E1+h1)^2/(k1^2+1)==r1^2,k1);  
+tempk=solve(k1*(E1+h1)^2/(k1^2+1)==r1^2,k1);  
 
 
   
