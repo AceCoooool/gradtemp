@@ -36,7 +36,7 @@ else
         len=(p1y-p2y)+r+p1x+p2x;sq=(len-(p1y-p2y))*r/2;
     else
         py=-lmax*sin(ltheta);px=py/k-63.64;
-        if r/2>lmax
+        if r/2>lmax+63.64
             len=p1x-px;sq=0;
         else
             len=-py+p1y+r+p1x+px;sq=(px+p1x+r)*(p1y-py)/2;
